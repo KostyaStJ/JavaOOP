@@ -10,7 +10,7 @@ public class Group {
 
 	public void addStudent(Student student) throws MyExeption {
 		for (int i = 0; i < gr.length; i++) {
-			if(i>9) throw new MyExeption ();
+			
 			if (gr[i]==null) {
 				gr[i] = student;
 				return;
