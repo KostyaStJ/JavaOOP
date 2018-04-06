@@ -20,9 +20,9 @@ public class Group {
 
 	public void deleteStudent(Student student) {
 		for (int i = 0; i < gr.length; i++) {
-			if (gr[i]== student) {
+			if (gr[i]== student & student != null) {
 				gr[i] = null;
-				break;
+				return;
 
 			}
 
