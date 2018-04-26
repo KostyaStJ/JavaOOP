@@ -1,7 +1,8 @@
 package trtwo;
 
-import java.sql.DriverPropertyInfo;
+
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input cups");
 		int cups = sc.nextInt();
-		ArrayDeque<String> och = new ArrayDeque<>();
+		Deque<String> och = new ArrayDeque<>();
 		och.add("Sheldon");
 		och.add("Leonard");
 		och.add("Volovits");
@@ -21,16 +22,16 @@ public class Main {
 			
 		}
 	
-	public static ArrayDeque<String> drinkCola(ArrayDeque<String> o,int c){
+	public static Deque<String> drinkCola(Deque<String> och,int c){
 		
 		for(int i=0; i<c; i++) {
-			o.addLast(o.getFirst());
-			o.addLast(o.getFirst());
-			o.removeFirst();
+			och.addLast(och.getFirst());
+			och.addLast(och.getFirst());
+			och.removeFirst();
 		}
 		
 		
-		return o;
+		return och;
 		
 		
 	}
